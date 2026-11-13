@@ -1,0 +1,2 @@
+Put Steel_industry_data.csv in this folder.
+(UCI "Steel Industry Energy Consumption" dataset, 35,040 rows. Check its licence before redistributing.)

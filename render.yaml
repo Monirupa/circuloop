@@ -1,0 +1,7 @@
+# Optional: deploy on Render later. Needs data/raw/Steel_industry_data.csv and models/energy_model.joblib committed.
+services:
+  - type: web
+    name: circuloop
+    runtime: python
+    buildCommand: pip install -r requirements.txt && python app/kg_build.py
+    startCommand: uvicorn main:app --app-dir app --host 0.0.0.0 --port $PORT
